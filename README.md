@@ -30,3 +30,7 @@
 | 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/longest_common_prefix.py) | Easy |
 | 1143 | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/longest_common_subsequence.py) | Medium |
 | 2360 | [Longest Cycle in a Graph](https://leetcode.com/problems/longest-cycle-in-a-graph/description/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/longest_cycle_in_a_graph.py) | Hard |
+| 516 | [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/longest_palindromic_subsequence.py) | Medium |
+| 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/longest_substring_without_repeating_characters.py) | Medium |
+| 149 | [Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/max_points_on_a_line.py) | Hard |
+| 1833 | [Maximum Ice Cream Bars](https://leetcode.com/problems/maximum-ice-cream-bars/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/maximum_ice_cream_bars.py) | Medium |
