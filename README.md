@@ -14,6 +14,8 @@
 | 133 | [Clone Graph](https://leetcode.com/problems/clone-graph/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/clone_graph.py) | Medium |
 | 2316 | [Count Unreachable Pairs of Nodes in an Undirected Graph](https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/count_unreachable_pairs_of_nodes_in_an_undirected_graph.py) | Medium |
 
-### :pushpin: TO DO :pushpin:
+### :pushpin: In progress // TO DO list :rocket:
+- add Python solutions
 - sort table rows by problem number
-- add C++ solutions
+- add C++ solutions and algorithms
+- add atcoder section
