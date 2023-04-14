@@ -17,8 +17,7 @@
 | 1379 | [Find a Corresponding Node of a Binary Tree in a Clone of That Tree](https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/find_a_corresponding_node_of_a_binary_tree_in_a_clone_of_that_tree.py) | Easy |
 | 1379 | [Find a Corresponding Node of a Binary Tree in a Clone of That Tree (with repeated values)](https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/find_a_corresponding_node_of_a_binary_tree_in_a_clone_of_that_tree_with_rep.py) | Easy |
 | 134 | [Gas Station](https://leetcode.com/problems/gas-station/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/gas_station.py) | Medium |
-| 392 | [Is Subsequence](https://leetcode.com/problems/is-subsequence/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/is_subsequence.py) |
- Easy |
+| 392 | [Is Subsequence](https://leetcode.com/problems/is-subsequence/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/is_subsequence.py) | Easy |
 | 1539 | [Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/kth_missing_positive_number.py) | Easy |
 | 1857 | [Largest Color Value in a Directed Graph](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/largest_color_value_in_a_directed_graph.py) | Hard |
 | 58 | [Length of Last Word](https://leetcode.com/problems/length-of-last-word/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/length_of_last_word.py) | Easy |
