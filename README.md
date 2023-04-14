@@ -8,3 +8,4 @@
 | 704  | [Binary Search](https://leetcode.com/problems/binary-search/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/binary_search.py) | Easy |
 | 144  | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/binary_tree_preorder_traversal.py) | Easy |
 | 881  | [Boats to Save People](https://leetcode.com/problems/boats-to-save-people/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/boats_to_save_people.py) | Medium |
+| 87   | [Scramble String](https://leetcode.com/problems/scramble-string/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/scramble_string.py) | Hard |
