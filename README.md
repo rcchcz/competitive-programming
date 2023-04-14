@@ -14,7 +14,6 @@
 | 704  | [Binary Search](https://leetcode.com/problems/binary-search/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/binary_search.py) | Easy |
 | 144  | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/binary_tree_preorder_traversal.py) | Easy |
 | 881  | [Boats to Save People](https://leetcode.com/problems/boats-to-save-people/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/boats_to_save_people.py) | Medium |
-| 87   | [Scramble String](https://leetcode.com/problems/scramble-string/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/scramble_string.py) | Hard |
 | 1640 | [Check Array Formation Through Concatenation](https://leetcode.com/problems/check-array-formation-through-concatenation/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/check_array_formation_through_concatenation.py) | Easy |
 | 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/climbing_stairs.py) | Easy |
 | 133 | [Clone Graph](https://leetcode.com/problems/clone-graph/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/clone_graph.py) | Medium |
@@ -50,3 +49,21 @@
 | 2405 | [Optimal Partition of String](https://leetcode.com/problems/optimal-partition-of-string/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/optimal_partition_of_string.py) | Medium |
 | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/palindrome_number.py) | Easy |
 | 66 | [Plus One](https://leetcode.com/problems/plus-one/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/plus_one.py) | Easy |
+| 1402 | [Reducing Dishes](https://leetcode.com/problems/reducing-dishes/) |  [Python](https://github.com/rcchcz/competitive-programming/blob/main/reducing_dishes.py) | Hard |
+| 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/remove_duplicates_from_sorted_array.py) | Easy |
+| 83 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/remove_duplicates_from_sorted_list.py) | Easy |
+| 27 | [Remove Element](https://leetcode.com/problems/remove-element/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/remove_element.py) | Easy |
+| 2390 | [Removing Stars From a String](https://leetcode.com/problems/removing-stars-from-a-string/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/removing_stars_from_a_string.py) | Medium |
+| 1466 | [Reorder Routes to Make All Paths Lead to the City Zero](https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/) | [Pyhton](https://github.com/rcchcz/competitive-programming/blob/main/reorder_routes_to_make_all_paths_lead_to_the_city_zero.py) | Medium |
+| 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [Python (it.)](https://github.com/rcchcz/competitive-programming/blob/main/reverse_linked_list_it.py), [Python (rec.)](https://github.com/rcchcz/competitive-programming/blob/main/reverse_linked_list_rec.py) | Easy |
+| 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/roman_to_integer.py) | Easy |
+| 100 | [Same Tree](https://leetcode.com/problems/same-tree/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/same_tree.py) | Easy |
+| 87   | [Scramble String](https://leetcode.com/problems/scramble-string/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/scramble_string.py) | Hard |
+| 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/search_insert_position.py) | Easy |
+| 71 | [Simplify Path](https://leetcode.com/problems/simplify-path/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/simplify_path.py) | Medium |
+| 69 | [Sqrt(x)](https://leetcode.com/problems/sqrtx/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/sqrtx.py) | Easy |
+| 2300 | [Successful Pairs of Spells and Potions](https://leetcode.com/problems/successful-pairs-of-spells-and-potions/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/successful_pairs_of_spells_and_potions.py) | Medium |
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/two_sum.py) | Easy |
+| 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/valid_parentheses.py) | Easy |
+| 946 | [Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/validate_stack_sequences.py) | Medium |
+| 290 | [Word Pattern](https://leetcode.com/problems/word-pattern/) |  [Python](https://github.com/rcchcz/competitive-programming/blob/main/word_pattern.py) | Easy |
