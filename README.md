@@ -1,6 +1,8 @@
 # Leetcode
 
-:pushpin: TO DO: sort table rows by problem number.
+:pushpin: TO DO
+- sort table rows by problem number
+- add C++ solutions
 
 | #    | Problem                                                 | Solution                                                                            | Difficulty |
 | ---- | ------------------------------------------------------- | ----------------------------------------------------------------------------------- | ---------- |
