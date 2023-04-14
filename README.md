@@ -12,5 +12,4 @@
 | 1640 | [Check Array Formation Through Concatenation](https://leetcode.com/problems/check-array-formation-through-concatenation/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/check_array_formation_through_concatenation.py) | Easy |
 | 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/climbing_stairs.py) | Easy |
 | 133 | [Clone Graph](https://leetcode.com/problems/clone-graph/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/clone_graph.py) | Medium |
-| 2316 | [Count Unreachable Pairs of Nodes in an Undirected Graph](https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/count_unreachable_pairs_of_nodes_in_an_undirected_graph.py) | 
-Medium
+| 2316 | [Count Unreachable Pairs of Nodes in an Undirected Graph](https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/count_unreachable_pairs_of_nodes_in_an_undirected_graph.py) | Medium |
