@@ -1,3 +1,9 @@
+### :pushpin: In progress // TO DO list :rocket:
+- add Python solutions
+- sort table rows by problem number
+- add C++ solutions and algorithms
+- add atcoder section
+
 # Leetcode
 
 | #    | Problem                                                 | Solution                                                                            | Difficulty |
@@ -24,10 +30,3 @@
 | 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/longest_common_prefix.py) | Easy |
 | 1143 | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/longest_common_subsequence.py) | Medium |
 | 2360 | [Longest Cycle in a Graph](https://leetcode.com/problems/longest-cycle-in-a-graph/description/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/longest_cycle_in_a_graph.py) | Hard |
-
-
-### :pushpin: In progress // TO DO list :rocket:
-- add Python solutions
-- sort table rows by problem number
-- add C++ solutions and algorithms
-- add atcoder section
