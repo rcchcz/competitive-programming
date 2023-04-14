@@ -1,5 +1,7 @@
 # Leetcode
 
+## TODO: sort table rows by problem number.
+
 | #    | Problem                                                 | Solution                                                                            | Difficulty |
 | ---- | ------------------------------------------------------- | ----------------------------------------------------------------------------------- | ---------- |
 | 2    | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/add_two_numbers.py) | Medium |
