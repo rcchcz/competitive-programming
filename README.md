@@ -15,5 +15,5 @@
 | 2316 | [Count Unreachable Pairs of Nodes in an Undirected Graph](https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/count_unreachable_pairs_of_nodes_in_an_undirected_graph.py) | Medium |
 
 ### :pushpin: TO DO :pushpin:
-- pushpin: sort table rows by problem number
+- sort table rows by problem number
 - add C++ solutions
