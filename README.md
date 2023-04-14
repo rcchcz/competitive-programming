@@ -46,7 +46,7 @@
 | 1020 | [Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/number_of_enclaves.py) | Medium |
 | 1319 | [Number of Operations to Make Network Connected](https://leetcode.com/problems/number-of-operations-to-make-network-connected/description/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/number_of_operations_to_make_network_connected.py) | Medium |
 | 1444 | [Number of Ways of Cutting a Pizza](https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/number_of_ways_of_cutting_a_pizza.py) | Hard |
-| 2348 | Number of Zero-Filled Subarrays](https://leetcode.com/problems/number-of-zero-filled-subarrays/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/number_of_zero_filled_subarrays.py) | Medium |
+| 2348 | [Number of Zero-Filled Subarrays](https://leetcode.com/problems/number-of-zero-filled-subarrays/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/number_of_zero_filled_subarrays.py) | Medium |
 | 2405 | [Optimal Partition of String](https://leetcode.com/problems/optimal-partition-of-string/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/optimal_partition_of_string.py) | Medium |
 | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/palindrome_number.py) | Easy |
 | 66 | [Plus One](https://leetcode.com/problems/plus-one/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/plus_one.py) | Easy |
