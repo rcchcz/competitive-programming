@@ -1,6 +1,6 @@
 # Leetcode
 
-## TODO: sort table rows by problem number.
+TODO: sort table rows by problem number.
 
 | #    | Problem                                                 | Solution                                                                            | Difficulty |
 | ---- | ------------------------------------------------------- | ----------------------------------------------------------------------------------- | ---------- |
