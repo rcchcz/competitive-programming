@@ -1,4 +1,4 @@
-### :pushpin: In progress // TO DO list :rocket:
+# :pushpin: In progress // TO DO list :rocket:
 - add Python solutions
 - sort table rows by problem number
 - add C++ solutions and algorithms
