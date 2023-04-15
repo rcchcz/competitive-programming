@@ -1,6 +1,3 @@
-# :pushpin: In progress // TO DO list :rocket:
-- add description to C++ solutions and algorithms
-
 # Leetcode
 
 | #    | Problem                                                 | Solution                                                                            | Difficulty |
