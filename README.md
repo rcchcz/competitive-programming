@@ -35,6 +35,7 @@
 | 516 | [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/longest_palindromic_subsequence.py) | Medium |
 | 662 | [Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/maximum_width_of_binary_tree.py) | Medium |
 | 704 | [Binary Search](https://leetcode.com/problems/binary-search/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/binary_search.py) | Easy |
+| 879 | [Profitable Schemes](https://leetcode.com/problems/profitable-schemes/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/profitable_schemes.py) | Hard |
 | 881 | [Boats to Save People](https://leetcode.com/problems/boats-to-save-people/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/boats_to_save_people.py) | Medium |
 | 944 | [Delete Columns to Make Sorted](https://leetcode.com/problems/delete-columns-to-make-sorted/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/delete_columns_to_make_sorted.py) | Easy |
 | 946 | [Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/validate_stack_sequences.py) | Medium |
