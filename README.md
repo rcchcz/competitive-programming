@@ -70,3 +70,4 @@
 | 2405 | [Optimal Partition of String](https://leetcode.com/problems/optimal-partition-of-string/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/optimal_partition_of_string.py) | Medium |
 | 2439 | [Minimize Maximum of Array](https://leetcode.com/problems/minimize-maximum-of-array/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/minimize_maximum_of_array.py) | Medium |
 | 2492 | [Minimum Score of a Path Between Two Cities](https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/description/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/minimum_score_of_a_path_between_two_cities.py) | Medium |
+| 2651 | [Calculate Delayed Arrival Time](https://leetcode.com/problems/calculate-delayed-arrival-time/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/calculate_delayed_arrival_time.py) | Easy |
