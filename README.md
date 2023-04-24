@@ -41,6 +41,7 @@
 | 946 | [Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/validate_stack_sequences.py) | Medium |
 | 983 | [Minimum Cost For Tickets](https://leetcode.com/problems/minimum-cost-for-tickets/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/minimum_cost_for_tickets.py) | Medium |
 | 1020 | [Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/number_of_enclaves.py) | Medium |
+| 1046 | [Last Stone Weight](https://leetcode.com/problems/last-stone-weight/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/last_stone_weight.py) | Easy |
 | 1143 | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/longest_common_subsequence.py) | Medium |
 | 1254 | [Number of Closed Islands](https://leetcode.com/problems/number-of-closed-islands/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/number_of_closed_islands.py) | Medium |
 | 1312 | [Minimum Insertion Steps to Make a String Palindrome](https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/minimum_insertion_steps_to_make_a_string_palindrome.py) | Hard |
