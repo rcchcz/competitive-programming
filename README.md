@@ -27,6 +27,7 @@
 | 134 | [Gas Station](https://leetcode.com/problems/gas-station/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/gas_station.py) | Medium |
 | 144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/binary_tree_preorder_traversal.py) | Easy |
 | 149 | [Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/max_points_on_a_line.py) | Hard |
+| 202 | [Happy Number](https://leetcode.com/problems/happy-number/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/happy_number.py) | Easy |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [Python (it.)](https://github.com/rcchcz/competitive-programming/blob/main/python/reverse_linked_list_it.py), [Python (rec.)](https://github.com/rcchcz/competitive-programming/blob/main/python/reverse_linked_list_rec.py) | Easy |
 | 258 | [Add Digits](https://leetcode.com/problems/add-digits/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/add_digits.py) | Easy       |
 | 290 | [Word Pattern](https://leetcode.com/problems/word-pattern/) |  [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/word_pattern.py) | Easy |
