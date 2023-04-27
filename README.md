@@ -31,6 +31,7 @@
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [Python (it.)](https://github.com/rcchcz/competitive-programming/blob/main/python/reverse_linked_list_it.py), [Python (rec.)](https://github.com/rcchcz/competitive-programming/blob/main/python/reverse_linked_list_rec.py) | Easy |
 | 258 | [Add Digits](https://leetcode.com/problems/add-digits/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/add_digits.py) | Easy       |
 | 290 | [Word Pattern](https://leetcode.com/problems/word-pattern/) |  [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/word_pattern.py) | Easy |
+| 319 | [Bulb Switcher](https://leetcode.com/problems/bulb-switcher/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/bulb_switcher.py) | Medium |
 | 392 | [Is Subsequence](https://leetcode.com/problems/is-subsequence/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/is_subsequence.py) | Easy |
 | 452 | [Minimum Number of Arrows to Burst Balloons](https://github.com/rcchcz/competitive-programming/blob/main/python/minimum_number_of_arrows_to_burst_balloons.py) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/minimum_number_of_arrows_to_burst_balloons.py) | Medium |
 | 516 | [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/longest_palindromic_subsequence.py) | Medium |
