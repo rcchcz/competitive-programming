@@ -39,6 +39,7 @@
 | 565 | [Array Nesting](https://leetcode.com/problems/array-nesting/) | [Python (it)](https://github.com/rcchcz/competitive-programming/blob/main/python/array_nesting_it.py), [Python (rec)](https://github.com/rcchcz/competitive-programming/blob/main/python/array_nesting_rec.py) | Medium |
 | 662 | [Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/maximum_width_of_binary_tree.py) | Medium |
 | 704 | [Binary Search](https://leetcode.com/problems/binary-search/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/binary_search.py) | Easy |
+| 848 | [Shifting Letters](https://leetcode.com/problems/shifting-letters/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/shifting_letters.py) | Medium |
 | 879 | [Profitable Schemes](https://leetcode.com/problems/profitable-schemes/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/profitable_schemes.py) | Hard |
 | 881 | [Boats to Save People](https://leetcode.com/problems/boats-to-save-people/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/boats_to_save_people.py) | Medium |
 | 944 | [Delete Columns to Make Sorted](https://leetcode.com/problems/delete-columns-to-make-sorted/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/delete_columns_to_make_sorted.py) | Easy |
