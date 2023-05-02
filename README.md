@@ -23,6 +23,7 @@
 | 83 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/remove_duplicates_from_sorted_list.py) | Easy |
 | 87   | [Scramble String](https://leetcode.com/problems/scramble-string/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/scramble_string.py) | Hard |
 | 100 | [Same Tree](https://leetcode.com/problems/same-tree/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/same_tree.py) | Easy |
+| 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/valid_palindrome.py) | Easy |
 | 133 | [Clone Graph](https://leetcode.com/problems/clone-graph/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/clone_graph.py) | Medium |
 | 134 | [Gas Station](https://leetcode.com/problems/gas-station/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/gas_station.py) | Medium |
 | 144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/binary_tree_preorder_traversal.py) | Easy |
@@ -38,6 +39,7 @@
 | 516 | [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/longest_palindromic_subsequence.py) | Medium |
 | 565 | [Array Nesting](https://leetcode.com/problems/array-nesting/) | [Python (it)](https://github.com/rcchcz/competitive-programming/blob/main/python/array_nesting_it.py), [Python (rec)](https://github.com/rcchcz/competitive-programming/blob/main/python/array_nesting_rec.py) | Medium |
 | 662 | [Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/maximum_width_of_binary_tree.py) | Medium |
+| 680 | [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/valid_palindrome_ii.py) | Easy |
 | 682 | [Baseball Game](https://leetcode.com/problems/baseball-game/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/baseball_game.py) | Easy |
 | 704 | [Binary Search](https://leetcode.com/problems/binary-search/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/binary_search.py) | Easy |
 | 848 | [Shifting Letters](https://leetcode.com/problems/shifting-letters/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/shifting_letters.py) | Medium |
