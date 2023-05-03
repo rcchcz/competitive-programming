@@ -45,6 +45,7 @@
 | 848 | [Shifting Letters](https://leetcode.com/problems/shifting-letters/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/shifting_letters.py) | Medium |
 | 879 | [Profitable Schemes](https://leetcode.com/problems/profitable-schemes/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/profitable_schemes.py) | Hard |
 | 881 | [Boats to Save People](https://leetcode.com/problems/boats-to-save-people/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/boats_to_save_people.py) | Medium |
+| 905 | [Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/sort_array_by_parity.py) | Easy |
 | 944 | [Delete Columns to Make Sorted](https://leetcode.com/problems/delete-columns-to-make-sorted/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/delete_columns_to_make_sorted.py) | Easy |
 | 946 | [Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/validate_stack_sequences.py) | Medium |
 | 983 | [Minimum Cost For Tickets](https://leetcode.com/problems/minimum-cost-for-tickets/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/minimum_cost_for_tickets.py) | Medium |
