@@ -1,27 +1,28 @@
-name: testing-tags
+name: tagging
 on:
   push:
     branches:
       - main
 
 jobs:
-  tag_job:
+  create_tag:
     runs-on: ubuntu-latest
+
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout Repository
+        uses: actions/checkout@v3
 
-    - name: Get existing tags
-      id: get_tags
-      run: |
-        tags=$(git tag --list "build-0.0.*" --sort=-v:refname)
-        current_version=$(echo "$highest_tag" | sort -Vr | awk -F '.' '{print $3}')
-        next_version=$((current_version + 1))
-        next_tag="build-0.0.$next_version"
-        echo "::set-output name=next_tag::$next_tag"
+      - name: Get Latest Tag
+        id: get_latest_tag
+        run: |
+          latest_tag=$(git describe --match "build-0.0.*" --abbrev=0 --tags 2>/dev/null)
+          current_version=$(echo "$latest_tag" | awk -F '.' '{print $3}')
+          next_version=$((current_version + 1))
+          echo "::set-output name=next_version::${next_version}"
 
-    - name: Create and push new tag
-      if: ${{ steps.get_tags.outputs.next_tag != '' }}
-      run: |
-        git tag ${{ steps.get_tags.outputs.next_tag }}
-        git push origin ${{ steps.get_tags.outputs.next_tag }}
+      - name: Create and Push Tag
+        id: create_tag
+        run: |
+          next_tag="build-0.0.${{ steps.get_latest_tag.outputs.next_version }}"
+          git tag "$next_tag"
+          git push origin "$next_tag"
