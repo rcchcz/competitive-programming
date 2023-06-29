@@ -11,16 +11,21 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Get last tag
-        id: last_tag
+      - name: Check if any tags exist
+        id: check_tags
         run: |
-          last_tag=$(git describe --match "build-0.0.*" --abbrev=0 --tags)
-          last_digit=$(echo "$last_tag" | awk -F '.' '{print $NF}')
-          next_digit=$((last_digit + 1))
-          next_tag="build-0.0.$next_digit"
-          echo "::set-output name=tag::$next_tag"
+          tag_count=$(git tag --list "build-0.0.*" | wc -l)
+          if [ "$tag_count" -eq 0 ]; then
+            echo "::set-output name=last_tag::build-0.0.0"
+          else
+            last_tag=$(git describe --match "build-0.0.*" --abbrev=0 --tags)
+            last_digit=$(echo "$last_tag" | awk -F '.' '{print $NF}')
+            next_digit=$((last_digit + 1))
+            next_tag="build-0.0.$next_digit"
+            echo "::set-output name=last_tag::$next_tag"
+          fi
 
       - name: Create and push tag
         run: |
-          git tag ${{ steps.last_tag.outputs.tag }}
-          git push origin ${{ steps.last_tag.outputs.tag }}
+          git tag ${{ steps.check_tags.outputs.last_tag }}
+          git push origin ${{ steps.check_tags.outputs.last_tag }}
