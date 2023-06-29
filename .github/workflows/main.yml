@@ -17,7 +17,7 @@ jobs:
 
     - name: Determine next tag
       id: next_tag
-      run: echo "::set-output name=tag::0.0.$(echo "${{ steps.last_tag.outputs.tag }}" | awk -F '.' '{print $3+1}')"
+      run: echo "::set-output name=tag::build-0.0.$(echo "${{ steps.last_tag.outputs.tag }}" | awk -F '.' '{print $3+1}')"
 
     - name: Create and push tag
       run: |
