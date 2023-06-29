@@ -15,9 +15,9 @@ jobs:
       id: get_tags
       run: |
         tags=$(git tag --list "build-0.0.*" | sort -t. -k3 -n -r)
-        highest_tag=$(echo "$tags" | tail -n1)
+        highest_tag=$(echo "$tags" | head -n1)
         current_k=$(echo "$highest_tag" | sed 's/build-0.0.//')
-        next_k=$((current_k + 2))
+        next_k=$((current_k + 1))
         next_tag="build-0.0.$next_k"
         echo "NEXT_TAG=$next_tag" >> $GITHUB_ENV
 
