@@ -1,25 +1,27 @@
-name: testing-pipe
-
+name: testing-tags
 on:
   push:
-    branches: main
+    branches:
+      - main
 
 jobs:
-  build:
+  tag_job:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v3
-      
-    - name: Get last tag
-      id: last_tag
-      run: echo "::set-output name=tag::$(git describe --abbrev=0 --tags)"
+    - name: Checkout repository
+      uses: actions/checkout@v2
 
-    - name: Determine next tag
-      id: next_tag
-      run: echo "::set-output name=tag::build-0.0.$(echo "${{ steps.last_tag.outputs.tag }}" | awk -F '.' '{print $3+1}')"
+    - name: Get existing tags
+      id: get_tags
+      run: |
+        tags=$(git tag --list "build-0.0.*" --sort=-v:refname)
+        highest_tag=$(echo "$tags" | head -n1)
+        current_k=$(echo "$highest_tag" | sed 's/build-0.0.//')
+        next_k=$((current_k + 1))
+        next_tag="build-0.0.$next_k"
+        echo "NEXT_TAG=$next_tag" >> $GITHUB_ENV
 
     - name: Create and push tag
       run: |
-        git tag ${{ steps.next_tag.outputs.tag }}
-        git push origin ${{ steps.next_tag.outputs.tag }}
+        git tag $NEXT_TAG
+        git push origin $NEXT_TAG
