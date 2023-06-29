@@ -14,12 +14,16 @@ jobs:
     - name: Get existing tags
       id: get_tags
       run: |
+        tags=$(git tag --list "build-0.0.*" --sort=-v:refname)
         highest_tag=$(echo "$tags" | sort -Vr | head -n1)
         current_k=$(echo "$highest_tag" | sed 's/build-0.0.//')
         next_k=$((current_k + 1))
-        echo NEXT_TAG="build-0.0.$next_k"
+        next_tag="build-0.0.$next_k"
 
-    - name: Create and push tag
-      run: |
-        git tag $NEXT_TAG
-        git push origin $NEXT_TAG
+        if [[ $(git tag -l "$next_tag") ]]; then
+          git tag $build-0.0.144
+          git push origin $build-0.0.144
+        else
+          git tag $next_tag
+          git push origin $next_tag
+        fi
