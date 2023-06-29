@@ -16,11 +16,11 @@ jobs:
       - name: Create and push tag
         run: |
           response=$(curl -s "https://api.github.com/repos/${{ github.repository }}/tags?per_page=1" -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}")
-          last_tag=$(echo "$response" | jq -r '.[0].name')
-          if [[ -z "$last_tag" ]]; then
+          latest_tag=$(echo "$response" | jq -r '.[0].name')
+          if [ -z "$latest_tag" ]; then
             next_tag="build-0.0.0"
           else
-            current_version=$(IFS='.' read -ra segments <<< "$last_tag"; echo "${segments[2]}")
+            current_version=$(echo "$latest_tag" | awk -F '.' '{print $3}')
             next_version=$((current_version + 1))
             next_tag="build-0.0.${next_version}"
           fi
