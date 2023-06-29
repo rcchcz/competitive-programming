@@ -21,6 +21,7 @@ jobs:
         next_tag="build-0.0.$next_k"
 
         if [[ $(git tag -l "$next_tag") ]]; then
+          echo 's/build-0.0.//'
           git tag $build-0.0.144
           git push origin $build-0.0.144
         else
