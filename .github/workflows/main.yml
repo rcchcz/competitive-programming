@@ -24,7 +24,7 @@ jobs:
         id: next_tag
         run: |
           last_tag=${{ steps.latest_tag.outputs.tag }}
-          if [ -z ${last_tag} ]; then
+          if [[ -z "$last_tag" ]]; then
             next_tag="build-0.0.0"
           else
             current_version=$(echo "$last_tag" | awk -F '.' '{print $3}')
