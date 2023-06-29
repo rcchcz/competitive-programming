@@ -25,7 +25,7 @@ jobs:
           last_digit=0
 
           for tag in $existing_tags; do
-            tag_digits=$(echo "$tag" | awk -F '.' '{print $3}')
+            tag_digits=$(echo "$tag" | awk -F '.' '{print $3 + 1}')
             if [ "$tag_digits" -gt "$last_digit" ]; then
               last_tag=$tag
               last_digit=$tag_digits
