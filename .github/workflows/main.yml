@@ -14,7 +14,7 @@ jobs:
     - name: Get existing tags
       id: get_tags
       run: |
-        tags=$(git tag --list "build-0.0.*" sort -t. -k3 -n -r)
+        tags=$(git tag --list "build-0.0.*" | sort -t. -k3 -n -r)
         highest_tag=$(echo "$tags" | head -n1)
         if [[ -z "$highest_tag" ]]; then
           next_tag="build-0.0.0"
