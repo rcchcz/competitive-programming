@@ -15,7 +15,7 @@ jobs:
       
       - name: Create and push tag
         run: |
-          last_tag=$(git tag -l --sort=-v:refname | grep build | head -n 1 )
+          last_tag=$(git tag -l --sort=-v:refname | grep build | tail -n 1 )
           if [[ -z "$last_tag" ]]; then
             next_tag="build-0.0.0"
           else
