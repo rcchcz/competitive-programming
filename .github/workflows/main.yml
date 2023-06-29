@@ -6,24 +6,31 @@ on:
       - main
 
 jobs:
-  create_tag:
+  create-tag:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Get Latest Tag
-        id: get_latest_tag
+      - name: Get last tag
+        id: last_tag
         run: |
           latest_tag=$(git describe --match "build-0.0.*" --abbrev=0 --tags 2>/dev/null)
-          current_version=$(echo "$latest_tag" | awk -F '.' '{print $3}')
-          next_version=$((current_version + 1))
-          echo "::set-output name=next_version::${next_version}"
+          echo "::set-output name=tag::${latest_tag:-build-0.0.0}"
 
-      - name: Create and Push Tag
-        id: create_tag
+      - name: Calculate next tag
+        id: next_tag
         run: |
-          next_tag="build-0.0.${{ steps.get_latest_tag.outputs.next_version }}"
-          git tag "$next_tag"
-          git push origin "$next_tag"
+          last_tag=${{ steps.last_tag.outputs.tag }}
+          current_version=$(echo "$last_tag" | awk -F '.' '{print $3}')
+          next_version=$((current_version + 1))
+          echo "::set-output name=tag::build-0.0.${next_version}"
+
+      - name: Create and push tag
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          next_tag=${{ steps.next_tag.outputs.tag }}
+          git tag $next_tag
+          git push origin $next_tag
