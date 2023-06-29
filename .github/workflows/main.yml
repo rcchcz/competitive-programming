@@ -1,0 +1,32 @@
+name: testing-pipe
+
+on:
+  push:
+    branches: main
+
+jobs:
+  tag:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Get existing tags
+        run: |
+          git fetch --tags --prune --depth=1
+          existing_tags=$(git tag --list "build-0.0.*")
+          max_k=0
+          for tag in $existing_tags; do
+            k=$(echo "$tag" | sed 's|build-0.0.||')
+            if [ "$k" -gt "$max_k" ]; then
+              max_k=$k
+            fi
+          done
+          next_k=$((max_k + 1))
+          next_tag="build-0.0.$next_k"
+          echo "::set-output name=tag::$next_tag"
+
+      - name: Create and push tag
+        run: |
+          git tag ${{ steps.tag_job.outputs.tag }}
+          git push origin ${{ steps.tag_job.outputs.tag }}
