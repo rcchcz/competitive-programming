@@ -11,19 +11,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Get existing tags
-        id: existing_tags
-        run: |
-          existing_tags=$(git tag --list "build-0.0.*")
-          echo "::set-output name=tags::$existing_tags"
-
       - name: Get last tag
         id: last_tag
         run: |
-          last_tag=$(git describe --match "build-0.0.*" --abbrev=0 --tags)
-          last_digit=$(echo "$last_tag" | awk -F '.' '{print $NF}')
-          next_digit=$((last_digit + 1))
-          next_tag=$(echo "$last_tag" | sed "s/$last_digit$/$next_digit/")
+          last_tag=$(git tag --list 'build-0.0.*' --sort=-version:refname | head -n1)
+          if [[ -z "$last_tag" ]]; then
+            next_tag="build-0.0.0"
+          else
+            last_digit=$(echo "$last_tag" | sed 's/build-0.0.//')
+            next_digit=$((last_digit + 1))
+            next_tag="build-0.0.$next_digit"
+          fi
           echo "::set-output name=tag::$next_tag"
 
       - name: Create and push tag
