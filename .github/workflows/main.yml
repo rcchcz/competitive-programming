@@ -18,7 +18,7 @@ jobs:
         run: |
           response=$(curl -s "https://api.github.com/repos/${{ github.repository }}/tags?per_page=1" -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}")
           latest_tag=$(echo "$response" | jq -r '.[0].name')
-          echo "TAG=$latest_tag" >> $GITHUB_ENV
+          echo "::set-output name=tag::$latest_tag"
 
       - name: Calculate next tag
         id: next_tag
@@ -31,10 +31,10 @@ jobs:
             next_version=$((current_version + 1))
             next_tag="build-0.0.${next_version}"
           fi
-          echo "TAG=$next_tag" >> $GITHUB_ENV
+          echo "::set-output name=tag::$next_tag"
 
       - name: Create and push tag
         run: |
-          next_tag=${{ env.TAG }}
+          next_tag=${{ steps.next_tag.outputs.tag }}
           git tag $next_tag
           git push origin $next_tag
