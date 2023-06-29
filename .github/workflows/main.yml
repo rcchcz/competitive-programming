@@ -21,7 +21,7 @@ jobs:
           next_tag="build-0.0.$next_k"
           echo "::set-output name=tag::$next_tag"
 
-    - name: Create and push tag
-      run: |
-        git tag ${{ steps.get_tags.outputs.tag }}
-        git push origin ${{ steps.get_tags.outputs.tag }}
+      - name: Create and push tag
+        run: |
+          git tag ${{ steps.get_tags.outputs.tag }}
+          git push origin ${{ steps.get_tags.outputs.tag }}
