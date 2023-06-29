@@ -11,16 +11,22 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       
-    - name: Get last tag
-      id: last_tag
+    - name: Get existing tags
       run: |
-        last_tag=$(git for-each-ref --sort=-taggerdate --format '%(refname)' --count=1 'refs/tags/build-0.0.*')
-        k=$(echo "$last_tag" | sed 's|refs/tags/build-0.0.||')
-        next_k=$((k + 1))
+        git fetch --tags --prune --depth=1
+        existing_tags=$(git tag --list "build-0.0.*")
+        max_k=0
+        for tag in $existing_tags; do
+          k=$(echo "$tag" | sed 's|build-0.0.||')
+          if [ "$k" -gt "$max_k" ]; then
+            max_k=$k
+          fi
+        done
+        next_k=$((max_k + 1))
         next_tag="build-0.0.$next_k"
         echo "::set-output name=tag::$next_tag"
 
     - name: Create and push tag
       run: |
-        git tag ${{ steps.last_tag.outputs.tag }}
-        git push origin ${{ steps.last_tag.outputs.tag }}
+        git tag ${{ steps.tag_job.outputs.tag }}
+        git push origin ${{ steps.tag_job.outputs.tag }}
