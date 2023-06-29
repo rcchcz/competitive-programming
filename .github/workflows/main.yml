@@ -1,4 +1,4 @@
-name: tagging
+name: tags
 
 on:
   push:
