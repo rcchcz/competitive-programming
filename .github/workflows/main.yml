@@ -17,15 +17,20 @@ jobs:
         id: last_tag
         run: |
           latest_tag=$(git describe --match "build-0.0.*" --abbrev=0 --tags 2>/dev/null)
-          echo "::set-output name=tag::${latest_tag:-build-0.0.0}"
+          echo "::set-output name=tag::${latest_tag}"
 
       - name: Calculate next tag
         id: next_tag
         run: |
           last_tag=${{ steps.last_tag.outputs.tag }}
-          current_version=$(echo "$last_tag" | awk -F '.' '{print $3}')
-          next_version=$((current_version + 1))
-          echo "::set-output name=tag::build-0.0.${next_version}"
+          if [[ -z "$last_tag" ]]; then
+            next_tag="build-0.0.0"
+          else
+            current_version=$(echo "$last_tag" | awk -F '.' '{print $3}')
+            next_version=$((current_version + 1))
+            next_tag="build-0.0.${next_version}"
+          fi
+          echo "::set-output name=tag::$next_tag"
 
       - name: Create and push tag
         env:
