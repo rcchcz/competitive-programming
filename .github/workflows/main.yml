@@ -18,8 +18,7 @@ jobs:
         highest_tag=$(echo "$tags" | head -n1)
         current_k=$(echo "$highest_tag" | sed 's/build-0.0.//')
         next_k=$((current_k + 1))
-        next_tag="build-0.0.$next_k"
-        echo "NEXT_TAG=$next_tag" >> $GITHUB_ENV
+        echo "NEXT_TAG=build-0.0.$next_k" >> $GITHUB_ENV
 
     - name: Create and push tag
       run: |
