@@ -11,21 +11,32 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Check if any tags exist
-        id: check_tags
+      - name: Get existing tags
+        id: existing_tags
         run: |
-          tag_count=$(git tag --list "build-0.0.*" | wc -l)
-          if [ "$tag_count" -eq 0 ]; then
-            echo "::set-output name=last_tag::build-0.0.0"
-          else
-            last_tag=$(git describe --match "build-0.0.*" --abbrev=0 --tags)
-            last_digit=$(echo "$last_tag" | awk -F '.' '{print $NF}')
-            next_digit=$((last_digit + 1))
-            next_tag="build-0.0.$next_digit"
-            echo "::set-output name=last_tag::$next_tag"
-          fi
+          existing_tags=$(git tag --list "build-0.0.*")
+          echo "::set-output name=tags::$existing_tags"
+
+      - name: Determine next tag
+        id: next_tag
+        run: |
+          existing_tags="${{ steps.existing_tags.outputs.tags }}"
+          last_tag=""
+          last_digit=0
+
+          for tag in $existing_tags; do
+            tag_digits=$(echo "$tag" | awk -F '.' '{print $3}')
+            if [ "$tag_digits" -gt "$last_digit" ]; then
+              last_tag=$tag
+              last_digit=$tag_digits
+            fi
+          done
+
+          next_digit=$((last_digit + 1))
+          next_tag="build-0.0.$next_digit"
+          echo "::set-output name=tag::$next_tag"
 
       - name: Create and push tag
         run: |
-          git tag ${{ steps.check_tags.outputs.last_tag }}
-          git push origin ${{ steps.check_tags.outputs.last_tag }}
+          git tag ${{ steps.next_tag.outputs.tag }}
+          git push origin ${{ steps.next_tag.outputs.tag }}
