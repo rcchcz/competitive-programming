@@ -9,24 +9,14 @@ jobs:
   create-tag:
     runs-on: ubuntu-latest
 
-    outputs:
-      tag: ${{ steps.next_tag.outputs.tag }}
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Get latest tag
-        id: latest_tag
+      - name: Create and push tag
         run: |
           response=$(curl -s "https://api.github.com/repos/${{ github.repository }}/tags?per_page=1" -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}")
           latest_tag=$(echo "$response" | jq -r '.[0].name')
-          echo "tag=$latest_tag" >> $GITHUB_ENV
-
-      - name: Calculate next tag
-        id: next_tag
-        run: |
-          last_tag=${{ env.tag }}
           if [ -z "$last_tag" ]; then
             next_tag="build-0.0.0"
           else
@@ -34,10 +24,5 @@ jobs:
             next_version=$((current_version + 1))
             next_tag="build-0.0.${next_version}"
           fi
-          echo "tag=$next_tag" >> $GITHUB_ENV
-
-      - name: Create and push tag
-        run: |
-          next_tag=${{ env.tag }}
           git tag $next_tag
           git push origin $next_tag
