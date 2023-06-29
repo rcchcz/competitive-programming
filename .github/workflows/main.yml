@@ -15,8 +15,7 @@ jobs:
       id: get_tags
       run: |
         tags=$(git tag --list "build-0.0.*" --sort=-v:refname)
-        highest_tag=$(echo "$tags" | sort -Vr | head -n1)
-        current_version=$(echo "$highest_tag" | awk -F '.' '{print $0}')
+        current_version=$(echo "$highest_tag" | sort -Vr | awk -F '.' '{print $3}')
         next_version=$((current_version + 1))
         next_tag="build-0.0.$next_version"
         echo "::set-output name=next_tag::$next_tag"
