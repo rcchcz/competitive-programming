@@ -16,8 +16,8 @@ jobs:
       - name: Get last tag
         id: last_tag
         run: |
-          latest_tag=$(git describe --match "build-0.0.*" --abbrev=0 --tags 2>/dev/null)
-          echo "::set-output name=tag::${latest_tag}"
+          latest_tag=$(git describe --match "build-0.0.*" --abbrev=0 --tags 2>/dev/null || echo "")
+          echo "::set-output name=tag::$latest_tag"
 
       - name: Calculate next tag
         id: next_tag
