@@ -14,7 +14,7 @@ jobs:
     - name: Get existing tags
       id: get_tags
       run: |
-        highest_tag=$(echo "$tags" | sort -t. -k3 -n -r | head -n1)
+        highest_tag=$(echo "$tags" | sort -Vr | head -n1)
         current_k=$(echo "$highest_tag" | sed 's/build-0.0.//')
         next_k=$((current_k + 1))
         echo "NEXT_TAG=build-0.0.$next_k" >> $GITHUB_ENV
