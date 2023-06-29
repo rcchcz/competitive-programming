@@ -1,3 +1,6 @@
+env:
+  ACTIONS_RUNNER_DEBUG: true
+  
 name: tagging
 on:
   push:
