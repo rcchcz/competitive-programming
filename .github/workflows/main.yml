@@ -17,26 +17,16 @@ jobs:
           existing_tags=$(git tag --list "build-0.0.*")
           echo "::set-output name=tags::$existing_tags"
 
-      - name: Determine next tag
-        id: next_tag
+      - name: Get last tag
+        id: last_tag
         run: |
-          existing_tags="${{ steps.existing_tags.outputs.tags }}"
-          last_tag=""
-          last_digit=0
-
-          for tag in $existing_tags; do
-            tag_digits=$(echo "$tag" | awk -F '.' '{print $3}')
-            if [ "$tag_digits" -gt "$last_digit" ]; then
-              last_tag=$tag
-              last_digit=$tag_digits
-            fi
-          done
-
+          last_tag=$(git describe --match "build-0.0.*" --abbrev=0 --tags)
+          last_digit=$(echo "$last_tag" | awk -F '.' '{print $NF}')
           next_digit=$((last_digit + 1))
-          next_tag="build-0.0.$next_digit"
+          next_tag=$(echo "$last_tag" | sed "s/$last_digit$/$next_digit/")
           echo "::set-output name=tag::$next_tag"
 
       - name: Create and push tag
         run: |
-          git tag ${{ steps.next_tag.outputs.tag }}
-          git push origin ${{ steps.next_tag.outputs.tag }}
+          git tag ${{ steps.last_tag.outputs.tag }}
+          git push origin ${{ steps.last_tag.outputs.tag }}
