@@ -37,5 +37,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           next_tag=${{ steps.next_tag.outputs.tag }}
-          git tag $next_tag
-          git push origin $next_tag
+          git tag -a $next_tag -m "Auto-generated tag: $next_tag" -f
+          git push origin $next_tag --force-with-lease
