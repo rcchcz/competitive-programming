@@ -16,7 +16,7 @@ jobs:
         run: |
           tags=$(git tag --list "build-0.0.*" --sort=-v:refname)
           highest_tag=$(echo "$tags" | head -n1)
-          current_k=$(echo "$highest_tag" | sed 's/build-0.0.//')
+          current_k=$(echo "$highest_tag")
           next_k=$((current_k + 1))
           next_tag="build-0.0.$next_k"
           echo "::set-output name=tag::$next_tag"
