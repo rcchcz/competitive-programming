@@ -12,17 +12,17 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-
+      
       - name: Create and push tag
         run: |
-          LAST_TAG=$(git tag -l --sort=-v:refname | grep build | head -n 1 )
-          LAST_VERSION=$(echo $LAST_TAG | sed 's/build-//')
-          if [ -z $LAST_VERSION ]]; then LAST_VERSION="0.0"; fi
-          ARR=($(echo $LAST_VERSION | sed s/build-//g | tr -s '.' ' ' | xargs -n 1))
-          MAJOR=${ARR[1]}
-          MINOR=${ARR[2]}
-          NEXT_MINOR=$(($MINOR + 1))
-          NEXT_VERSION="$MAJOR.$NEXT_MINOR"
-          TAG_NAME="build-$NEXT_VERSION"
-          git tag $TAG_NAME
-          git push --tags
+          response=$(curl -s "https://api.github.com/repos/${{ github.repository }}/tags?per_page=1" -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}")
+          latest_tag=$(echo "$response" | jq -r '.[0].name')
+          if [[ -z ${last_tag} ]]; then
+            next_tag="build-0.0.0"
+          else
+            current_version=$(echo "$last_tag" | awk -F '.' '{print $3}')
+            next_version=$((current_version + 1))
+            next_tag="build-0.0.${next_version}"
+          fi
+          git tag $next_tag
+          git push origin $next_tag
