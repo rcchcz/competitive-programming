@@ -19,8 +19,8 @@ jobs:
           LAST_VERSION=$(echo $LAST_TAG | sed 's/build-//')
           if [ -z $LAST_VERSION ]; then LAST_VERSION="0.0"; fi
           ARR=($(echo $LAST_VERSION | sed s/build-//g | tr -s '.' ' ' | xargs -n 1))
-          MAJOR=${ARR[1]}
-          MINOR=${ARR[2]}
+          MAJOR=${ARR[0]}
+          MINOR=${ARR[1]}
           NEXT_MINOR=$((MINOR + 1))
           NEXT_VERSION="$MAJOR.$NEXT_MINOR"
           TAG_NAME="build-$NEXT_VERSION"
