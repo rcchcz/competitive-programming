@@ -15,22 +15,6 @@ jobs:
 
       - name: Create and push tag
         run: |
-          #!/bin/bash
-
-          LAST_TAG=$(git tag -l --sort=-v:refname | grep -E 'build-[0-9]+\.[0-9]+' | head -n 1)
-          LAST_VERSION=$(echo "$LAST_TAG" | grep -oE '[0-9]+\.[0-9]+' | head -n 1)
-
-          if [ -z "$LAST_VERSION" ]; then
-              LAST_VERSION="0.0"
-          fi
-
-          IFS='.' read -r -a ARR <<< "$LAST_VERSION"
-          MAJOR="${ARR[0]}"
-          MINOR="${ARR[1]}"
-          NEXT_MINOR=$((MINOR + 1))
-          NEXT_VERSION="$MAJOR.$NEXT_MINOR"
-          TAG_NAME="build-$NEXT_VERSION"
-
-          git tag "$TAG_NAME"
+          TAG_NAME="build-$(date +'%m%d%Y%H%M%S')"
+          git tag $TAG_NAME
           git push --tags
-
