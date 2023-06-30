@@ -15,8 +15,10 @@ jobs:
 
       - name: Create and push tag
         run: |
-          LAST_TAG=$(git tag -l --sort=-v:refname | grep 'build' | head -n 1)
-          LAST_VERSION=$(echo "$LAST_TAG" | sed 's/build-//')
+          #!/bin/bash
+
+          LAST_TAG=$(git tag -l --sort=-v:refname | grep -E 'build-[0-9]+\.[0-9]+' | head -n 1)
+          LAST_VERSION=$(echo "$LAST_TAG" | grep -oE '[0-9]+\.[0-9]+' | head -n 1)
 
           if [ -z "$LAST_VERSION" ]; then
               LAST_VERSION="0.0"
@@ -31,3 +33,4 @@ jobs:
 
           git tag "$TAG_NAME"
           git push --tags
+
