@@ -1,5 +1,5 @@
 # LeetCode
-
+![LeetCode Stats](https://leetcard.jacoblin.cool/rcchcz?theme=dark&font=Fira%20Mono)
 | #    | Problem                                                 | Solution                                                                            | Difficulty |
 | ---- | ------------------------------------------------------- | ----------------------------------------------------------------------------------- | ---------- |
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [Python](https://github.com/rcchcz/competitive-programming/blob/main/python/two_sum.py) | Easy |
